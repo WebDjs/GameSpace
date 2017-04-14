@@ -1,5 +1,9 @@
 'use strict';
 
+import {
+	validator as validator
+} from './utils/validator.js';
+
 const blogCtrl = (() => {
 	class BlogCtrl {
 		constructor() {

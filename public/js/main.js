@@ -8,9 +8,9 @@ import {
 	router as router
 } from './router.js';
 
+
 $(function () {
 	$(() => {
-		// alert('SystemJS works!');
 		view.header('.header', {});
 		view.footer('.footer', {});
 

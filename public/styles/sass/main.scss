@@ -3,6 +3,11 @@
 	src: url('../../fonts/MJF Zhafira Demo.ttf');
 }
 
+@font-face {
+	font-family: 'Sunny';
+	src: url('../../fonts/Sunny Spring Day - TTF.ttf');
+}
+
 body {
 	background-color: gainsboro;
 
@@ -15,26 +20,61 @@ body {
 			z-index: 1;
 			min-width: 100%;
 
+			nav.navbar {
+				background-color: black;
+				border: 0;
+				border-radius: 0;
+
+				.main-link {
+					font-family: 'Sunny', serif;
+					font-weight: bold;
+					font-size: 28px;
+					color: darkorange;
+					&:hover {
+						color: silver;
+					}
+					&:focus {
+						color: silver;
+					}
+				}
+			}
+
 			#brand {
 				font-family: 'Zhafira', serif;
+				color: darkolivegreen;
+				text-shadow: -1px 1px darkorange;
 				font-size: 38px;
-				margin-left: -11%
+				&:hover {
+				color: silver;
+				text-shadow: -1px 1px whitesmoke
+				}
 			}
 		}
 
 		#content {
 			padding-top: 55px;
-			color: gainsboro;
-			min-height: 450px;
-			background: grey;
+			padding-left: 15px;
+			color: silver;
+			min-height: 500px;
+			background: darkolivegreen;
 		}
 
 		.footer {
-			color: gainsboro;
+			padding-top: 15px;
+			padding-left: 15px;
+			color: silver;
 			min-height: 150px;
-			background-color: darkblue;
-			border: 1px solid gray;
+			background-color: black;
+			border-top: 5px solid darkorange;
 		}
 
+	}
+}
+
+.login-container {
+	border: 1px solid #000000;
+	max-width: 70%;
+	.login-field {
+		margin: 5px
 	}
 }

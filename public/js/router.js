@@ -1,8 +1,12 @@
 'use strict';
 
 import {
-    view as view
-} from "./view/view-service.js";
+	mainCtrl as mainCtrl
+} from "./controllers/main.ctrl.js";
+
+import {
+	userCtrl as userCtrl
+} from "./controllers/user.ctrl.js";
 
 const router = {
 	init: $(function () {
@@ -10,31 +14,48 @@ const router = {
 		appRouter
 			.on({
 				'/home': () => {
-					view.home('#content', {})
+					mainCtrl.home;
 				},
 				'/knews': () => {
-					view.info('#content', {})
+					mainCtrl.knews;
 				},
 				'/blog': () => {
-					view.blog('#content', {})
+					mainCtrl.blog;
 				},
 				'/tournaments': () => {
-					view.tournaments('#content', {})
+					mainCtrl.tournaments;
 				},
 				'/chess': () => {
-					view.chess('#content', {})
+					mainCtrl.chess;
 				},
 				'/profile': () => {
-					view.blog('#content', {})
+					mainCtrl.profile;
 				},
 				'/signin': () => {
-					view.home('#content', {})
+					mainCtrl.login;
+				},
+				'/signin-btn': () => {
+					let username = $('.login-container .login-field .user-name').val();
+					let pass = $('.login-container .login-field .pass-word').val();
+
+					userCtrl.signIn(username, pass);
+					
+					$('.login-container .login-field .user-name').val('');
+					$('.login-container .login-field .pass-word').val('');
+					$('.login-container .login-field .e-mail').val('');
+				},
+				'/signup-btn': () => {
+					let username = $('.login-container .login-field .user-name').val();
+					let email = $('.login-container .login-field .e-mail').val();
+
+					userCtrl.signUp(username, email);
+					
+					$('.login-container .login-field .user-name').val('');
+					$('.login-container .login-field .e-mail').val('');
+					$('.login-container .login-field .pass-word').val('');
 				},
 				'/signout': () => {
-					view.home('#content', {})
-				},
-				'/signup': () => {
-					view.home('#content', {})
+					mainCtrl.home;
 				},
 				'/': () => {
 					appRouter.navigate('/home');

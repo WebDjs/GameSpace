@@ -23,6 +23,10 @@ const view = (() => {
 			this.templateLoader.load(selector, this.templatesPath + 'home.html', data);
 		}
 
+		login(selector, data) {
+			this.templateLoader.load(selector, this.templatesPath + 'login.html', data);
+		}
+
 		info(selector, data) {
 			this.templateLoader.load(selector, this.templatesPath + 'info.html', data);
 		}
@@ -33,6 +37,14 @@ const view = (() => {
 
 		tournaments(selector, data) {
 			this.templateLoader.load(selector, this.templatesPath + 'tournaments.html', data);
+		}
+
+		profile(selector, data) {
+			this.templateLoader.load(selector, this.templatesPath + 'profile.html', data);
+		}
+
+		NotificationPermissionCallback(selector, data) {
+			this.templateLoader.load(selector, this.templatesPath + 'message.html', data);
 		}
 	}
 

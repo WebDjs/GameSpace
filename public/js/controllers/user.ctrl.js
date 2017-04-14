@@ -2,7 +2,11 @@
 
 import {
 	validator as validator
-} from './utils/validator.js';
+} from '../utils/validator.js';
+
+import {
+	auth as auth
+} from '../utils/authentication.js';
 
 const userCtrl = (() => {
 	class UserCtrl {
@@ -10,12 +14,16 @@ const userCtrl = (() => {
 
 		}
 
-		signIn() {
-
+		signIn(username, password) {
+			if (validator.validateUsername(username) && validator.validatePassword(password)) {
+				alert(username + ' ' + password);
+			}
 		}
 
-		signUp() {
-
+		signUp(username, email) {
+			if (validator.validateUsername(username) && validator.validateEmail(email)) {
+				alert(username + ' ' + email);
+			}
 		}
 
 		signOut() {

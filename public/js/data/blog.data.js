@@ -1,11 +1,7 @@
 'use strict';
 
-import {
-    ajaxRequester as requester
-} from "./jquery-ajax-requester.js";
-
-const data = (() => {
-	class Data {
+const blogData = (ajaxRequester) => {
+	class BlogData {
 		constructor(requester) {
 			this.requester = requester;
 		}
@@ -26,10 +22,10 @@ const data = (() => {
 		}
 	}
 
-	const dataObj = new Data(ajaxRequester);
+	const dataObj = new BlogData(ajaxRequester);
 	return dataObj;
-})();
+}
 
 export {
-	data
+	blogData
 };

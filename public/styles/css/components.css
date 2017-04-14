@@ -35,7 +35,7 @@
   border-radius: 4px 4px 4px 4px; }
 
 .search-form .form-group span.form-control-feedback {
-  border-left: 2px solid #000000;
+  border-left: 2px solid black;
   position: absolute;
   top: -1px;
   right: -2px;
@@ -45,8 +45,10 @@
   height: 34px;
   line-height: 34px;
   text-align: center;
-  color: #000000;
+  color: silver;
   left: initial;
   font-size: 14px; }
+  .search-form .form-group span.form-control-feedback:hover {
+    font-size: 16px; }
 
 /* Bootstrap styles end*/

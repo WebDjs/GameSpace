@@ -1,0 +1,41 @@
+@font-face {
+	font-family: "Zhafira";
+	src: url("../../fonts/MJF Zhafira Demo.ttf");
+}
+
+body {
+	background-color: gainsboro;
+
+	.wrapper {
+		padding-left: 1px;
+		padding-right: 1px;
+
+		.header {
+			position: fixed;
+			z-index: 1;
+			min-width: 100%;
+
+			#brand {
+				font-family: "Zhafira", serif;
+				font-size: 38px
+			}
+		}
+
+		#content, .footer {
+			color: gainsboro;
+			min-height: 350px;
+			border-radius: 5px;
+			background: grey;
+		}
+
+		#content {
+			padding-top: 55px;
+		}
+
+		.footer {
+			background-color: darkblue;
+			border: 1px solid gray;
+		}
+
+	}
+}

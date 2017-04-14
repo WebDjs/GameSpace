@@ -2,11 +2,11 @@
 
 import {
 	view as view
-} from "./view/view-service.js";
+} from './view/view-service.js';
 
 import {
 	router as router
-} from "./router.js";
+} from './router.js';
 
 $(function () {
 	$(() => {

@@ -1,26 +1,27 @@
 @font-face {
-  font-family: "Zhafira";
+  font-family: 'Zhafira';
   src: url("../../fonts/MJF Zhafira Demo.ttf"); }
 
 body {
   background-color: gainsboro; }
   body .wrapper {
-    padding-left: 1px;
-    padding-right: 1px; }
+    padding-left: 0;
+    padding-right: 0; }
     body .wrapper .header {
       position: fixed;
       z-index: 1;
       min-width: 100%; }
       body .wrapper .header #brand {
-        font-family: "Zhafira", serif;
-        font-size: 38px; }
-    body .wrapper #content, body .wrapper .footer {
-      color: gainsboro;
-      min-height: 350px;
-      border-radius: 5px;
-      background: grey; }
+        font-family: 'Zhafira', serif;
+        font-size: 38px;
+        margin-left: -11%; }
     body .wrapper #content {
-      padding-top: 55px; }
+      padding-top: 55px;
+      color: gainsboro;
+      min-height: 450px;
+      background: grey; }
     body .wrapper .footer {
+      color: gainsboro;
+      min-height: 150px;
       background-color: darkblue;
       border: 1px solid gray; }

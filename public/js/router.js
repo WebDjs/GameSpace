@@ -18,11 +18,14 @@ const router = {
 				'/blog': () => {
 					view.blog('#content', {})
 				},
+				'/tournaments': () => {
+					view.tournaments('#content', {})
+				},
 				'/chess': () => {
 					view.chess('#content', {})
 				},
-				'/tournaments': () => {
-					view.tournaments('#content', {})
+				'/profile': () => {
+					view.blog('#content', {})
 				},
 				'/signin': () => {
 					view.home('#content', {})

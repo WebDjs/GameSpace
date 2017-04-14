@@ -3,8 +3,8 @@ const ajaxRequester = (() => {
 		_sendAjax(method, url, data, options) {
 			options = options || {};
 
-			const headers = options.headers || {},
-				data = data || {},
+			const data = data || {},
+				headers = options.headers || {},
 				contentType = options.contentType || 'application/json';
 
 			const promise = new Promise((resolve, reject) => {

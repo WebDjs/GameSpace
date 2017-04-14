@@ -27,10 +27,6 @@ const view = (() => {
 			this.templateLoader.load(selector, this.templatesPath + 'info.html', data);
 		}
 
-		blog(selector, data) {
-			this.templateLoader.load(selector, this.templatesPath + 'blog.html', data);
-		}
-
 		chess(selector, data) {
 			this.templateLoader.load(selector, this.templatesPath + 'chess.html', data);
 		}

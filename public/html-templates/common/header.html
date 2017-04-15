@@ -1,26 +1,42 @@
-<nav class="navbar navbar-inverse">
-	<div class="container-fluid">
-		<div class="navbar-header col-md-3">
-			<button class="btn btn-navbar navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
+<nav class="navbar navbar-inverse navbar-fixed-top row">
+	<div class="navbar-header col-md-3">
+		<button class="btn btn-navbar navbar-toggle nav-colapse-btn" data-toggle="collapse" data-target="#navbar-links">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a id="brand" class="navbar-brand" href="#/home">Chess Space</a>
-		</div>
-		<div id="navbar-links" class="col-md-6">
-			<ul class="nav navbar-nav">
-				<li><a class="main-link" href="#/knews">Knews</a></li>
-				<li><a class="main-link" href="#/blog">Blog</a></li>
-				<li><a class="main-link" href="#/chess">Play Room</a></li>
-				<li><a class="main-link" href="#/tournaments">Tournaments</a></li>
-			</ul>
-		</div>
-		<div class="col-md-3">
-			<ul class="nav navbar-nav" style="float: right;">
-				<li><a class="main-link" href="#/signin">Sign in / Sign up</a></li>
-			</ul>
-		</div>
+		<a id="brand" class="navbar-brand" href="#/home">Game Space</a>
+	</div>
+	<div id="navbar-links" class="collapse navbar-collapse col-md-6">
+		<ul class="nav navbar-nav">
+			<li><a class="main-link" href="#/news">News</a></li>
+			<li><a class="main-link" href="#/blog">Blog</a></li>
+			<li><a class="main-link" href="#/games">Play Room</a></li>
+			<li><a class="main-link" href="#/tournaments">Tournaments</a></li>
+			<li><a class="main-link" href="#/search">Search</a></li>
+		</ul>
+	</div>
+	<div class="col-md-3">
+		<ul class="nav navbar-nav nav-right">
+			<li class="dropdown">
+				<a class="main-link dropdown-toggle" data-toggle="dropdown" href="/">Sign in / Sign up</a>
+				<div class="dropdown-menu login-container">
+					<form>
+						<div class="login-field">
+							<input class="user-name" type="text" name="user-name" placeholder="username">
+						</div>
+						<div class="login-field">
+							<input class="pass-word" type="password" name="pass-word" placeholder="password">
+							<a id="signin-btn" class="btn btn-success sign-btn" href="#/signin-btn">Sign in</a>
+						</div>
+						<div class="login-field">
+							<input class="e-mail" type="email" name="e-mail" placeholder="e-mail">
+							<a class="btn btn-primary sign-btn" href="#/signup-btn">Sign up</a>
+						</div>
+					</form>
+				</div>
+			</li>
+		</ul>
 	</div>
 </nav>

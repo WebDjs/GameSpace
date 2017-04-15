@@ -19,20 +19,16 @@ const view = (() => {
 			this.templateLoader.load(selector, this.templatesPath + 'common/' + 'footer.html', data);
 		}
 
-		home(selector, data) {
-			this.templateLoader.load(selector, this.templatesPath + 'home.html', data);
+		//=============================================================
+
+		chess(selector, data) {
+			this.templateLoader.load(selector, this.templatesPath + 'games/' + 'chess.html', data);
 		}
 
-		login(selector, data) {
-			this.templateLoader.load(selector, this.templatesPath + 'login.html', data);
-		}
+		//=============================================================
 
 		info(selector, data) {
 			this.templateLoader.load(selector, this.templatesPath + 'info.html', data);
-		}
-
-		chess(selector, data) {
-			this.templateLoader.load(selector, this.templatesPath + 'chess.html', data);
 		}
 
 		tournaments(selector, data) {
@@ -41,10 +37,6 @@ const view = (() => {
 
 		profile(selector, data) {
 			this.templateLoader.load(selector, this.templatesPath + 'profile.html', data);
-		}
-
-		NotificationPermissionCallback(selector, data) {
-			this.templateLoader.load(selector, this.templatesPath + 'message.html', data);
 		}
 	}
 

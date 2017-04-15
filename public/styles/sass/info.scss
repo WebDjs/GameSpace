@@ -1,0 +1,30 @@
+.info-container {
+	margin-top: 5px;
+
+	.info-news {
+		border: 2px solid black;
+		border-radius: 5px;
+		max-width: 99%;
+		min-height: 420px;
+		margin-right: 5px;
+		padding: 5px;
+		margin-bottom: 15px;
+		box-shadow: -1px 1px darkorange;
+		font-family: serif;
+
+		.info-news-title {
+			border-bottom: 2px solid #96cc96;
+			color: #96cc96;
+		}
+
+		.info-news-text {
+			text-align: justify;
+
+			&>a .info-news-img {
+				float: right;
+				min-height: 250px;
+				margin: 5px
+			}
+		}
+	}
+}

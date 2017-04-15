@@ -2,16 +2,16 @@ const notifier = (() => {
 	class Notifier {
 
 		success(msg) {
-		$(body).a;
-			toastr.success('SUCCESS', msg, { timeOut: 3000 });
+			$(body).a;
+			toastr.success(msg, 'SUCCESS', { timeOut: 3000 });
 		}
 
 		error(msg) {
-			toastr.error('ERROR', msg, { timeOut: 3000 });
+			toastr.error(msg, 'ERROR', { timeOut: 4000 });
 		}
 
 		warning(msg) {
-			toastr.warning('Warning', msg, { timeOut: 4000 });
+			toastr.warning(msg, 'WARNING', { timeOut: 4000 });
 		}
 	}
 

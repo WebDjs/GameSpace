@@ -1,4 +1,4 @@
-# Chess Space
+# Game Space
 
 [JavaScript](https://www.javascript.com/ "JavaScript") single-page application with [Navigo](https://github.com/krasimir/navigo "Navigo"), [jQuery](http://jquery.com/"jQuery"), [Handlebars](http://handlebarsjs.com/ "Handlebars") and [SystemJS](https://github.com/systemjs/systemjs "SystemJS").
 

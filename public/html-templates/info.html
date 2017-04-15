@@ -1,3 +1,13 @@
-<div class="container-fluid">
-	Info
+<div class="info-container">
+	{{#each data}}
+	<article class="info-news">
+		<h3 class="info-news-title">{{this.title}}</h3>
+		<p class="info-news-text">
+			<a href={{this.link}}>
+				<img class="info-news-img" src={{this.img}} alt="news image" width="40%" height="120px">
+			</a>
+			{{this.description}}
+		</p>
+	</article>
+	{{/each}}
 </div>

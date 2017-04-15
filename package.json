@@ -1,5 +1,5 @@
 {
-  "name": "chess-space",
+  "name": "game-space",
   "version": "1.0.0",
   "description": "js spa",
   "main": "server.js",
@@ -8,6 +8,8 @@
     "npm": "3.10.x"
   },
   "scripts": {
+    "c": "npm run css-compress",
+    "css-compress": "gulp css:compress",
     "sass": "gulp sass:watch",
     "npm-client": "cd public && npm install",
     "postinstall": "bower install && npm run npm-client",
@@ -44,7 +46,9 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.3.0",
     "gulp-sass": "^3.1.0",
+    "gulp-uglifycss": "^1.0.8",
     "openurl": "^1.1.1"
   }
 }

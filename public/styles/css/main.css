@@ -7,51 +7,67 @@
   src: url("../../fonts/Sunny Spring Day - TTF.ttf"); }
 
 body {
-  background-color: gainsboro; }
+  background-color: darkolivegreen; }
+  body .login-container {
+    background-color: #96cc96;
+    border: 2px solid #000000;
+    margin-left: -140px;
+    min-width: 200%; }
+    body .login-container input {
+      margin-left: -10px;
+      border-radius: 2px;
+      padding: 2px; }
+    body .login-container .login-field {
+      padding: 5px;
+      margin-left: 15%; }
   body .wrapper {
     padding-left: 0;
     padding-right: 0; }
-    body .wrapper .header {
-      position: fixed;
-      z-index: 1;
-      min-width: 100%; }
-      body .wrapper .header nav.navbar {
-        background-color: black;
-        border: 0;
-        border-radius: 0; }
-        body .wrapper .header nav.navbar .main-link {
-          font-family: 'Sunny', serif;
-          font-weight: bold;
-          font-size: 28px;
-          color: darkorange; }
-          body .wrapper .header nav.navbar .main-link:hover {
-            color: silver; }
-          body .wrapper .header nav.navbar .main-link:focus {
-            color: silver; }
-      body .wrapper .header #brand {
-        font-family: 'Zhafira', serif;
-        color: darkolivegreen;
-        text-shadow: -1px 1px darkorange;
-        font-size: 38px; }
-        body .wrapper .header #brand:hover {
-          color: silver;
-          text-shadow: -1px 1px whitesmoke; }
-    body .wrapper #content {
-      padding-top: 55px;
+    body .wrapper .header nav.navbar {
+      background-color: black;
+      border: 0;
+      border-radius: 0; }
+      body .wrapper .header nav.navbar .nav-colapse-btn {
+        background-color: darkolivegreen; }
+        body .wrapper .header nav.navbar .nav-colapse-btn .icon-bar {
+          background-color: darkorange; }
+      body .wrapper .header nav.navbar .main-link {
+        margin-top: 5px;
+        font-family: 'Sunny', serif;
+        font-weight: bold;
+        font-size: 28px;
+        color: darkorange; }
+        body .wrapper .header nav.navbar .main-link:hover {
+          color: silver; }
+        body .wrapper .header nav.navbar .main-link:focus {
+          color: silver; }
+      body .wrapper .header nav.navbar .sign-btn {
+        width: 80px;
+        height: 30px; }
+    body .wrapper .header #brand {
+      font-family: 'Zhafira', serif;
+      color: darkolivegreen;
+      text-shadow: -1px 1px darkorange;
+      font-size: 38px; }
+      body .wrapper .header #brand:hover {
+        color: silver;
+        text-shadow: -1px 1px whitesmoke; }
+    body .wrapper .header .nav-right {
+      float: right; }
+    body .wrapper .main {
+      padding-top: 60px;
       padding-left: 15px;
-      color: silver;
-      min-height: 500px;
-      background: darkolivegreen; }
+      min-height: 550px;
+      color: #96cc96;
+      border-bottom: 5px solid darkolivegreen;
+      background-color: darkolivegreen; }
+      body .wrapper .main #content {
+        border-right: 2px solid darkorange; }
     body .wrapper .footer {
       padding-top: 15px;
       padding-left: 15px;
-      color: silver;
+      color: darkorange;
       min-height: 150px;
+      max-height: 150px;
       background-color: black;
-      border-top: 5px solid darkorange; }
-
-.login-container {
-  border: 1px solid #000000;
-  max-width: 70%; }
-  .login-container .login-field {
-    margin: 5px; }
+      border-top: 2px solid darkorange; }

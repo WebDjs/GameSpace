@@ -1,5 +1,5 @@
 {
-  "name": "chess-space",
+  "name": "game-space",
   "description": "js spa",
   "main": "server.js",
   "authors": [

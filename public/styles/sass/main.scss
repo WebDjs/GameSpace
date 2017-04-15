@@ -9,33 +9,63 @@
 }
 
 body {
-	background-color: gainsboro;
+					background-color: darkolivegreen;
+
+	.login-container {
+		background-color: #96cc96;
+		border: 2px solid #000000;
+		margin-left: -140px;
+		min-width: 200%;
+
+	input {
+		margin-left: -10px;
+		border-radius: 2px;
+		padding: 2px;
+	}
+
+	.login-field {
+		padding: 5px;
+		margin-left: 15%
+	}
+}
 
 	.wrapper {
 		padding-left: 0;
 		padding-right: 0;
 
 		.header {
-			position: fixed;
-			z-index: 1;
-			min-width: 100%;
 
 			nav.navbar {
 				background-color: black;
 				border: 0;
 				border-radius: 0;
 
+				.nav-colapse-btn {
+					background-color: darkolivegreen;
+					.icon-bar {
+						background-color: darkorange;
+					}
+				}
+
 				.main-link {
+					margin-top: 5px;
 					font-family: 'Sunny', serif;
 					font-weight: bold;
 					font-size: 28px;
 					color: darkorange;
+
 					&:hover {
 						color: silver;
 					}
+
 					&:focus {
 						color: silver;
 					}
+				}
+
+				.sign-btn {
+					width: 80px;
+					height: 30px
 				}
 			}
 
@@ -44,37 +74,39 @@ body {
 				color: darkolivegreen;
 				text-shadow: -1px 1px darkorange;
 				font-size: 38px;
+
 				&:hover {
-				color: silver;
-				text-shadow: -1px 1px whitesmoke
+					color: silver;
+					text-shadow: -1px 1px whitesmoke
 				}
+			}
+
+			.nav-right {
+				float: right;
 			}
 		}
 
-		#content {
-			padding-top: 55px;
+		.main {
+			padding-top: 60px;
 			padding-left: 15px;
-			color: silver;
-			min-height: 500px;
-			background: darkolivegreen;
+			min-height: 550px;
+			color: #96cc96;
+			border-bottom: 5px solid darkolivegreen;
+			background-color: darkolivegreen;
+
+			#content {
+				border-right: 2px solid darkorange;
+			}
 		}
 
 		.footer {
 			padding-top: 15px;
 			padding-left: 15px;
-			color: silver;
+			color: darkorange;
 			min-height: 150px;
+			max-height: 150px;
 			background-color: black;
-			border-top: 5px solid darkorange;
+			border-top: 2px solid darkorange;
 		}
-
-	}
-}
-
-.login-container {
-	border: 1px solid #000000;
-	max-width: 70%;
-	.login-field {
-		margin: 5px
 	}
 }

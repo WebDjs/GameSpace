@@ -16,8 +16,8 @@ const router = {
 				'/home': () => {
 					mainCtrl.home;
 				},
-				'/knews': () => {
-					mainCtrl.knews;
+				'/news': () => {
+					mainCtrl.news;
 				},
 				'/blog': () => {
 					mainCtrl.blog;
@@ -25,14 +25,14 @@ const router = {
 				'/tournaments': () => {
 					mainCtrl.tournaments;
 				},
-				'/chess': () => {
-					mainCtrl.chess;
+				'/games': () => {
+					mainCtrl.games;
+				},
+				'/search': () => {
+					
 				},
 				'/profile': () => {
 					mainCtrl.profile;
-				},
-				'/signin': () => {
-					mainCtrl.login;
 				},
 				'/signin-btn': () => {
 					let username = $('.login-container .login-field .user-name').val();
@@ -56,6 +56,9 @@ const router = {
 				},
 				'/signout': () => {
 					mainCtrl.home;
+				},
+				'/chess': () => {
+					mainCtrl.chess;
 				},
 				'/': () => {
 					appRouter.navigate('/home');

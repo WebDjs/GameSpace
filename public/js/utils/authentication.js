@@ -1,17 +1,15 @@
 'use strict';
 
-import {
-	hash as hash
-} from "./hashing.js";
+import { hash as hash } from './hashing.js';
 
 const auth = (() => {
 	class Auth {
-		constructor() {
-
+		constructor(hash) {
+			this.hash = hash;
 		}
 	}
 
-	const newObj = new Auth();
+	const newObj = new Auth(hash);
 	return newObj;
 })();
 

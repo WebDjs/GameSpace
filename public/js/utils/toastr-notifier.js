@@ -1,3 +1,5 @@
+'use strict';
+
 const notifier = (() => {
 	class Notifier {
 

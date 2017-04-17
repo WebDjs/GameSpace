@@ -204,7 +204,7 @@ var getBestMove = function (game) {
     }
 
     positionCount = 0;
-    var depth = parseInt($('#search-depth').find(':selected').text());
+    var depth = parseInt($('#search-depth').find(':selected').val());
 
     var d = new Date().getTime();
     var bestMove = minimaxRoot(depth, game, true);

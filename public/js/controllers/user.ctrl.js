@@ -1,12 +1,9 @@
 'use strict';
 
-import {
-	validator as validator
-} from '../utils/validator.js';
-
-import {
-	auth as auth
-} from '../utils/authentication.js';
+import { view as view } from '../view/view-service.js';
+import { data as data } from '../data/data-sevice.js';
+import { validator as validator } from '../utils/validator.js';
+import { auth as auth } from '../utils/authentication.js';
 
 const userCtrl = (() => {
 	class UserCtrl {

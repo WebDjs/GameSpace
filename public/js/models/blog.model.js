@@ -1,17 +1,21 @@
-const blogModel = (() => {
-	class BlogModel {
-		constructor() {
-			this._id = '';
-			this.user = '';
-			this.tag = '';
-			this.comments = [];
-		}
+'use strict';
+
+import { ObjectModel as ObjectModel } from './object.model';
+
+class BlogModel extends ObjectModel {
+	constructor(id, title, image, userName, description, tags, comments) {
+		super(id, title, image, description, tags, comments);
+		this._userName = userName;
 	}
 
-	const newBlogModel = new BlogModel();
-	return newBlogModel;
-})();
+	get userName() {
+		return this._userName;
+	}
+	set userName(userName) {
+		this._userName = userName;
+	}
+}
 
 export {
-	blogModel
+	BlogModel
 }

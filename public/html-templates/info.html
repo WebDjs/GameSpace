@@ -1,13 +1,18 @@
-<div class="info-container">
+<div class="info-containers">
 	{{#each data}}
 	<article class="info-news">
-		<h3 class="info-news-title">{{this.title}}</h3>
+		<a href="{{this.link}}"><h4 class="info-news-title">{{this.title}}</h4></a>
 		<p class="info-news-text">
 			<a href={{this.link}}>
-				<img class="info-news-img" src={{this.img}} alt="news image" width="40%" height="120px">
+				<img class="info-news-img" src={{this.image}} alt="news image" width="100%">
 			</a>
-			{{this.description}}
 		</p>
+
+		<div class="info-news-tags">
+			{{#each this.tags}}
+			<a href="/" class="btn btn-primary"><h6>{{this}}</h6></a>
+			{{/each}}
+		</div>
 	</article>
 	{{/each}}
 </div>

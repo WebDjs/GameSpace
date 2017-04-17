@@ -1,73 +1,24 @@
-@font-face {
-  font-family: 'Zhafira';
-  src: url("../../fonts/MJF Zhafira Demo.ttf"); }
-
-@font-face {
-  font-family: 'Sunny';
-  src: url("../../fonts/Sunny Spring Day - TTF.ttf"); }
-
 body {
   background-color: darkolivegreen; }
-  body .login-container {
-    background-color: #96cc96;
-    border: 2px solid #000000;
-    margin-left: -140px;
-    min-width: 200%; }
-    body .login-container input {
-      margin-left: -10px;
-      border-radius: 2px;
-      padding: 2px; }
-    body .login-container .login-field {
-      padding: 5px;
-      margin-left: 15%; }
   body .wrapper {
-    padding-left: 0;
-    padding-right: 0; }
-    body .wrapper .header nav.navbar {
-      background-color: black;
-      border: 0;
-      border-radius: 0; }
-      body .wrapper .header nav.navbar .nav-colapse-btn {
-        background-color: darkolivegreen; }
-        body .wrapper .header nav.navbar .nav-colapse-btn .icon-bar {
-          background-color: darkorange; }
-      body .wrapper .header nav.navbar .main-link {
-        margin-top: 5px;
-        font-family: 'Sunny', serif;
-        font-weight: bold;
-        font-size: 28px;
-        color: darkorange; }
-        body .wrapper .header nav.navbar .main-link:hover {
-          color: silver; }
-        body .wrapper .header nav.navbar .main-link:focus {
-          color: silver; }
-      body .wrapper .header nav.navbar .sign-btn {
-        width: 80px;
-        height: 30px; }
-    body .wrapper .header #brand {
-      font-family: 'Zhafira', serif;
-      color: darkolivegreen;
-      text-shadow: -1px 1px darkorange;
-      font-size: 38px; }
-      body .wrapper .header #brand:hover {
-        color: silver;
-        text-shadow: -1px 1px whitesmoke; }
-    body .wrapper .header .nav-right {
-      float: right; }
+    margin: 0; }
     body .wrapper .main {
-      padding-top: 60px;
-      padding-left: 15px;
+      padding-top: 70px;
+      padding-left: 18px;
       min-height: 550px;
       color: #96cc96;
       border-bottom: 5px solid darkolivegreen;
       background-color: darkolivegreen; }
+      body .wrapper .main #content, body .wrapper .main #content-aside {
+        min-height: 470px;
+        border: 2px solid black;
+        border-radius: 3px;
+        box-shadow: -1px 1px darkorange;
+        margin-bottom: 15px;
+        padding: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
       body .wrapper .main #content {
-        border-right: 2px solid darkorange; }
-    body .wrapper .footer {
-      padding-top: 15px;
-      padding-left: 15px;
-      color: darkorange;
-      min-height: 150px;
-      max-height: 150px;
-      background-color: black;
-      border-top: 2px solid darkorange; }
+        max-width: 69%; }
+      body .wrapper .main #content-aside {
+        max-width: 30%;
+        margin-left: 0.9%; }

@@ -2,24 +2,20 @@
 	<link rel="stylesheet" href="./games/chess/css/chessboard-0.3.0.css">
 
 	<div id="board" class="board col-md-8"></div><br>
-	<div class="info col-md-4">
-		Search depth:
-		<select id="search-depth" style="background: black">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3" selected>3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
-
-		<br>
-		<span>Positions evaluated: <span id="position-count"></span></span>
-		<br>
-		<span>Time: <span id="time"></span></span>
-		<br>
-		<span>Positions/s: <span id="positions-per-s"></span> </span>
-		<br>
-		<br>
+	<div class="info col-md-4" style="padding-left: 20px">
+		<div style="margin-top: -19px; width: 103%">
+			Opponent Level:
+			<select id="search-depth" style="background: black">
+				<option value="1">Novice</option>
+				<option value="2">Amateur</option>
+				<option value="3" selected>Intermediate</option>
+				<option value="4">Advanced</option>
+				<option value="5">Expert</option>
+			</select>
+			<br>
+			<span>Opponent Move Time: <span id="time"></span></span>
+		</div>
+		<br>Game History:
 		<div id="move-history" class="move-history">
 		</div>
 	</div>

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-inverse navbar-fixed-top row">
-	<div class="navbar-header col-md-3">
+	<div class="navbar-header col-sm-3">
 		<button class="btn btn-navbar navbar-toggle nav-colapse-btn" data-toggle="collapse" data-target="#navbar-links">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
@@ -8,35 +8,20 @@
 			</button>
 		<a id="brand" class="navbar-brand" href="#/home">Game Space</a>
 	</div>
-	<div id="navbar-links" class="collapse navbar-collapse col-md-6">
-		<ul class="nav navbar-nav">
-			<li><a class="main-link" href="#/news">News</a></li>
+	<div id="navbar-links" class="collapse navbar-collapse col-sm-6">
+		<ul class="nav navbar-nav nav-right">
+			<li><a class="main-link" href="#/about">About</a></li>
 			<li><a class="main-link" href="#/blog">Blog</a></li>
-			<li><a class="main-link" href="#/games">Play Room</a></li>
+			<!--<li><a class="main-link" href="#/news">News</a></li>-->
+			<li><a class="main-link" href="#/games">Games</a></li>
 			<li><a class="main-link" href="#/tournaments">Tournaments</a></li>
-			<li><a class="main-link" href="#/search">Search</a></li>
+			<!--<li><a class="main-link" href="#/search">Search</a></li>-->
 		</ul>
 	</div>
-	<div class="col-md-3">
+	<div class="col-sm-3 nav-right"> 
 		<ul class="nav navbar-nav nav-right">
-			<li class="dropdown">
-				<a class="main-link dropdown-toggle" data-toggle="dropdown" href="/">Sign in / Sign up</a>
-				<div class="dropdown-menu login-container">
-					<form>
-						<div class="login-field">
-							<input class="user-name" type="text" name="user-name" placeholder="username">
-						</div>
-						<div class="login-field">
-							<input class="pass-word" type="password" name="pass-word" placeholder="password">
-							<a id="signin-btn" class="btn btn-success sign-btn" href="#/signin-btn">Sign in</a>
-						</div>
-						<div class="login-field">
-							<input class="e-mail" type="email" name="e-mail" placeholder="e-mail">
-							<a class="btn btn-primary sign-btn" href="#/signup-btn">Sign up</a>
-						</div>
-					</form>
-				</div>
-			</li>
+			<li><a class="main-link" href="#/settings">Settings</a</li>
+			<li><a class="main-link" href="#/signin">Sign in / Sign up</a</li>
 		</ul>
 	</div>
 </nav>

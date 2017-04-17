@@ -1,12 +1,11 @@
 'use strict';
 
-import {
-	notifier as notifier
-} from "./toastr-notifier.js";
+import { notifier as notifier } from './toastr-notifier.js';
 
 const validator = (() => {
 	class Validator {
-		constructor() {
+		constructor(notifier) {
+			this.notifier = notifier;
 			this.constantz = {
 				emailReg: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
 				passwordReg: /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/,
@@ -19,7 +18,7 @@ const validator = (() => {
 			let letters = this.constantz.emailReg;
 
 			if (!email.match(letters)) {
-				notifier.warning('E-mail must consist of letters and numbers, dot, symbol @ ');
+				this.notifier.warning('E-mail must consist of letters and numbers, dot, symbol @ ');
 				return false;
 			}
 
@@ -30,7 +29,7 @@ const validator = (() => {
 			let letters = this.constantz.passwordReg;
 
 			if (!password.match(letters)) {
-				notifier.warning('Password must contain at least 6 characters, including UPPER/lowercase and numbers');
+				this.notifier.warning('Password must contain at least 6 characters, including UPPER/lowercase and numbers');
 				return false;
 			}
 
@@ -42,12 +41,12 @@ const validator = (() => {
 			let letters = this.constantz.usernameReg;
 
 			if (!username.match(letters)) {
-				notifier.warning('Username must consist of letters and numbers');
+				this.notifier.warning('Username must consist of letters and numbers');
 				return false;
 			}
 
 			if (username.length < 3 || username.length > 20 || !username) {
-				notifier.warning('Username must be consist of min 3 symbols and max of 20 symbols');
+				this.notifier.warning('Username must be consist of min 3 symbols and max of 20 symbols');
 				return false;
 			}
 
@@ -57,7 +56,7 @@ const validator = (() => {
 
 		validateAge(age) {
 			if (age < 0 || age > 120 || !age) {
-				notifier.warning('Age must be a number between 0 and 120');
+				this.notifier.warning('Age must be a number between 0 and 120');
 				return false;
 			}
 
@@ -68,7 +67,7 @@ const validator = (() => {
 			let letters = this.constantz.commentReg;
 
 			if (comment.length < 20 || !comment.match(letters)) {
-				notifier.warning('Comment must be minimum 20 symbols of letters and numbers');
+				this.notifier.warning('Comment must be minimum 20 symbols of letters and numbers');
 				return false;
 			}
 
@@ -76,7 +75,7 @@ const validator = (() => {
 		}
 	}
 
-	const newValid = new Validator();
+	const newValid = new Validator(notifier);
 	return newValid;
 })();
 

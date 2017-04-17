@@ -1,16 +1,13 @@
-const newsModel = (() => {
-	class NewsModel {
-		constructor() {
-			this._id = '';
-			this.tag = '';
-			this.comments = [];
-		}
-	}
+'use strict';
 
-	const newNewsModel = new NewsModel();
-	return newNewsModel;
-})();
+import { ObjectModel as ObjectModel } from './object.model';
+
+class NewsModel extends ObjectModel {
+	constructor(id, title, image, description, tags, comments) {
+		super(id, title, image, description, tags, comments);
+	}
+}
 
 export {
-	newsModel
+	NewsModel
 }
